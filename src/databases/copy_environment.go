@@ -9,7 +9,7 @@ import (
 	"github.com/UniHacksOrg/DBocker/src/tools"
 )
 
-func CopyDB_Project(base string, config models.DB_Config) string {
+func CopyDB_Project(base string, config models.DataBase) string {
 	// Obtener la ruta del directorio actual
 	currentDir, err := os.Getwd()
 	if err != nil {

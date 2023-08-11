@@ -8,7 +8,7 @@ import (
 	"github.com/UniHacksOrg/DBocker/src/tools"
 )
 
-func ConfigureDB_Project(destinationFolder string, config models.DB_Config) {
+func ConfigureDB_Project(destinationFolder string, config models.DataBase) {
 	placeholders := map[string]string{
 		"__container_name__": config.ContainerName,
 		"__port__":           strconv.Itoa(config.Port),

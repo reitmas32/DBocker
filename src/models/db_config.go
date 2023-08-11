@@ -1,8 +1,11 @@
 package models
 
-type DB_Config struct {
+import "gorm.io/gorm"
+
+type DataBase struct {
+	gorm.Model
 	RootPassword  string
-	Name          string
+	Name          string `gorm:"unique"`
 	User          string
 	Password      string
 	Port          int
