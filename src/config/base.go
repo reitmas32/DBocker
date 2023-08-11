@@ -12,9 +12,10 @@ var (
 	UNIACCOUNT_NAME  = "uniaccount"
 	TOKEN_TYPE       = "JWT"
 
-	PORT  = 3001
-	DEBUG = true
-	HOST  = "0.0.0.0"
+	PORT         = 3001
+	DB_INIT_PORT = 3100
+	DEBUG        = true
+	HOST         = "0.0.0.0"
 
 	//PostgreSQL
 	URL_POSTGRESQL = ""
