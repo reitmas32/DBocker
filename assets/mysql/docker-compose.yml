@@ -1,0 +1,12 @@
+version: '3'
+services:
+  __container_name__:
+    image: mysql
+    container_name: __container_name__
+    env_file:
+      - ./.env
+    ports:
+      - "__port__:3306"
+    volumes:
+      - __volumen_route__:/var/lib/postgresql/data
+    restart: always
