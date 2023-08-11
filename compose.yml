@@ -1,0 +1,12 @@
+version: '3'
+services:
+  dbocker:
+    image: postgres
+    container_name: dbocker
+    env_file:
+      - ./.env
+    ports:
+      - "5433:5432"
+    volumes:
+      - /home/rafa/work/unihacks/DBocker/volumen:/var/lib/postgresql/data
+    restart: always
